@@ -1,0 +1,30 @@
+{
+    "name": "petecheyne/nova-notifications",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"،,
+        "titasgailius/search-relations": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Petecheyne\\NovaNotifications\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Petecheyne\\NovaNotifications\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
