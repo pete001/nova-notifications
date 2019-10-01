@@ -7,7 +7,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=7.1.0"،,
+        "php": ">=7.1.0",
         "titasgailius/search-relations": "^1.0"
     },
     "autoload": {
