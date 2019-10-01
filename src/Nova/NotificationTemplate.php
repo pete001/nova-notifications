@@ -32,7 +32,7 @@ class NotificationTemplate extends Resource
      */
     public static $search = [
         'title',
-        'body',
+        'message',
     ];
 
     public static function group()
@@ -56,7 +56,7 @@ class NotificationTemplate extends Resource
                     'required',
                 ]),
 
-            Textarea::make(__('Body'), 'body')
+            Textarea::make(__('Body'), 'message')
                 ->rules([
                     'required',
                 ])

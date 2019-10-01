@@ -70,8 +70,8 @@ class Notification extends Resource
                 return $this->resource->data['title'];
             }),
 
-            Text::make(__('Body'), function () {
-                return $this->resource->data['body'];
+            Text::make(__('Message'), function () {
+                return $this->resource->data['message'];
             }),
 
             DateTime::make(__('Read At'), 'read_at'),

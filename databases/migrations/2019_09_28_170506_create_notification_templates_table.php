@@ -16,7 +16,7 @@ class CreateNotificationTemplatesTable extends Migration
         Schema::create('notification_templates', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->text('body');
+            $table->text('message');
             $table->softDeletes();
             $table->timestamps();
         });

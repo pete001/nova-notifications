@@ -34,7 +34,7 @@ class SendNovaNotification extends Action implements ShouldQueue
         $notification = NotificationTemplate::find($fields->get('notification'));
 
         foreach ($models as $model) {
-            $model->notify(new NovaNotification($notification->title, $notification->body));
+            $model->notify(new NovaNotification($notification->title, $notification->message));
         }
     }
 

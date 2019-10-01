@@ -13,18 +13,18 @@ class NovaNotification extends Notification implements ShouldQueue
 
     public $title;
 
-    public $body;
+    public $message;
 
     /**
      * NovaNotification constructor.
      *
      * @param $title
-     * @param $body
+     * @param $message
      */
-    public function __construct($title, $body)
+    public function __construct($title, $message)
     {
         $this->title = $title;
-        $this->body = $body;
+        $this->message = $message;
     }
 
     /**
@@ -48,7 +48,7 @@ class NovaNotification extends Notification implements ShouldQueue
     {
         return [
             'title' => $this->title,
-            'message' => $this->body,
+            'message' => $this->message,
         ];
     }
 }
