@@ -21,7 +21,7 @@ class NovaNotifications extends Value
      */
     public function calculate(Request $request)
     {
-        return $this->count($request, Notification::class);
+        return $this->count($request, Notification::where('type', 'Petecheyne\NovaNotifications\Notifications\NovaNotification'));
     }
 
     /**
