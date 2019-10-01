@@ -132,15 +132,15 @@ class Notification extends Resource
     {
         return false;
     }
-    
+
     public function authorizedToDelete(Request $request)
     {
-        return false;
+        return true;
     }
 
     public function authorizedToUpdate(Request $request)
     {
-        return false;
+        return true;
     }
 
 }

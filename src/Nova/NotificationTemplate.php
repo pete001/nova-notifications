@@ -56,7 +56,7 @@ class NotificationTemplate extends Resource
                     'required',
                 ]),
 
-            Textarea::make(__('Body'), 'message')
+            Textarea::make(__('Message'), 'message')
                 ->rules([
                     'required',
                 ])
