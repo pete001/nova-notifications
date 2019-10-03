@@ -21,8 +21,7 @@ class NovaReadNotifications extends Value
      */
     public function calculate(Request $request)
     {
-        return $this->count($request, Notification::whereNotNull('read_at'))
-            ->where('type', 'Petecheyne\NovaNotifications\Notifications\NovaNotification'));
+        return $this->count($request, Notification::whereNotNull('read_at')->where('type', 'Petecheyne\NovaNotifications\Notifications\NovaNotification'));
 
     }
 
